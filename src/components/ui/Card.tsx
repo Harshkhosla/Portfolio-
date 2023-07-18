@@ -9,7 +9,7 @@ interface CardProps {
     exp: string;
     src: string;
     progress: number;
-    link: string; // Make the link prop optional by adding '?' to it
+    link?: string; // Make the link prop optional by adding '?' to it
 }
 
 const Card: FC<CardProps> = ({ title, snippetCount, exp, src, progress, link }) => {

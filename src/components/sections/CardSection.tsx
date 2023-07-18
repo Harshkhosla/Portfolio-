@@ -10,7 +10,7 @@ interface CardSectionProps {
         exp: string;
         snippetCount: number;
         progress: number;
-        link:string;
+        link?:string;
     }[];
 }
 
