@@ -6,8 +6,8 @@ import ContactForm from '@/components/ContactForm';
 import { ContactFormProvider, MenuProvider } from '@/components/Provider';
 
 export const metadata: Metadata = {
-    title: 'Ez Snippet',
-    description: 'Learning made EZ',
+    title: 'Harsh khosla',
+    description: 'This is my portfolio',
 };
 
 export default function RootLayout({
