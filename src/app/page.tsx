@@ -19,9 +19,9 @@ export default function Home() {
                 <Hero />
                 <CardSection title="Projects" data={projectCard} />
                 <CardSection title="Frontend" data={frontendCard} />
+                <CardSection title="Android Development" data={devopsCards} />
                 <CardSection title="Backend" data={backendCard} />
                 <CardSection title="Database" data={databaseCard} />
-                <CardSection title="DevOps" data={devopsCards} />
                 <CardSection title="Web3" data={web3Cards} />
                 <CardSection title="Others" data={otherCards} />
             </div>

@@ -81,7 +81,7 @@ const Menu: FC<MenuProps> = ({}) => {
                 <Ticket /> Jouls Connect
             </List>
             <List
-                link="https://github.com/Harshkhosla/Live-Frontend-of-health-care"
+                link="https://jouls-admin-panel.vercel.app/"
                 effect="slideUp"
             >
                 <Share2 /> Admin Pannel
