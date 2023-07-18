@@ -11,6 +11,7 @@ interface CardSectionProps {
         snippetCount: number;
         progress: number;
         link?:string;
+        link1?:string;
     }[];
 }
 
@@ -30,6 +31,7 @@ const CardSection: FC<CardSectionProps> = ({ title, data }) => {
                         snippetCount={card.snippetCount}
                         progress={card.progress}
                         link={card.link}
+                        link1={card.link1}
                     />
                 ))}
             </div>

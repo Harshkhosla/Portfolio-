@@ -27,6 +27,15 @@
         },
         {
             id: 4,
+            title: 'Admin Panel',
+            src: '/projects/admin.png',
+            exp: '1 day ago',
+            snippetCount: 1128,
+            progress: 100,
+            link:"https://jouls-admin-panel.vercel.app/",
+        },
+        {
+            id: 5,
             title: 'Trello Clone',
             src: '/projects/Trello.png',
             exp: '1 day ago',
