@@ -10,6 +10,7 @@ interface CardSectionProps {
         exp: string;
         snippetCount: number;
         progress: number;
+        link:string;
     }[];
 }
 
@@ -19,6 +20,8 @@ const CardSection: FC<CardSectionProps> = ({ title, data }) => {
             <div className="text-xl font-bold text-highlight">{title}</div>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl::grid-cols-5 gap-5">
                 {data.map((card) => (
+                    // console.log(card)
+                    
                     <Card
                         key={card.id}
                         title={card.title}
@@ -26,6 +29,7 @@ const CardSection: FC<CardSectionProps> = ({ title, data }) => {
                         exp={card.exp}
                         snippetCount={card.snippetCount}
                         progress={card.progress}
+                        link={card.link}
                     />
                 ))}
             </div>

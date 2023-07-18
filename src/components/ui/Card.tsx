@@ -9,18 +9,30 @@ interface CardProps {
     exp: string;
     src: string;
     progress: number;
+    link?: string; // Make the link prop optional by adding '?' to it
 }
 
-const Card: FC<CardProps> = ({ title, snippetCount, exp, src, progress }) => {
+const Card: FC<CardProps> = ({ title, snippetCount, exp, src, progress, link }) => {
     return (
         <div className="flex flex-col gap-3">
             <div className="relative aspect-video">
-                <Image
-                    src={src}
-                    alt={title}
-                    fill
-                    className="object-cover rounded-lg"
-                />
+            {link ? (
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                        <Image
+                            src={src}
+                            alt={title}
+                            fill
+                            className="object-cover rounded-lg"
+                        />
+                    </a>
+                ) : (
+                    <Image
+                        src={src}
+                        alt={title}
+                        fill
+                        className="object-cover rounded-lg"
+                    />
+                )}
                 <div className="progress-bar">
                     <div
                         className="h-full bg-btnHighlight"
@@ -35,11 +47,11 @@ const Card: FC<CardProps> = ({ title, snippetCount, exp, src, progress }) => {
             <div className="grid gap-2 px-2">
                 <div className="text-highlight font-bold">{title}</div>
                 <div className="flex gap-2 md:gap-10">
-                    <List variant="info" link="/instagram" sizes="xs">
+                    <List variant="info" link={link} sizes="xs">
                         <Code size={16} />
                         {snippetCount.toLocaleString()}
                     </List>
-                    <List variant="info" link="/instagram" sizes="xs">
+                    <List variant="info"  sizes="xs">
                         <History size={16} />
                         {exp}
                     </List>
