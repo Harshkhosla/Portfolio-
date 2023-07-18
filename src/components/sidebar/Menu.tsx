@@ -71,26 +71,26 @@ const Menu: FC<MenuProps> = ({}) => {
 
             {/* List 3 */}
             <div className="mt-5">Projects</div>
-            <List link="https://github.com/Harshkhosla/Backend" effect="slideUp">
-                <ShoppingCart /> eCommerce
+            <List link="https://ezinvoicegenerator.com/" effect="slideUp">
+                <ShoppingCart /> Easy Invoice
             </List>
             <List
-                link="https://github.com/nwaliaez/HardhatLottery"
+                link="https://github.com/Harshkhosla/Joules-cLI"
                 effect="slideUp"
             >
-                <Ticket /> Lottery
+                <Ticket /> Jouls Connect
             </List>
             <List
-                link="https://github.com/nwaliaez/filetransfer-webrtc"
+                link="https://github.com/Harshkhosla/Live-Frontend-of-health-care"
                 effect="slideUp"
             >
-                <Share2 /> File Sharing
+                <Share2 /> Admin Pannel
             </List>
             <List
-                link="https://github.com/nwaliaez/dalleClone"
+                link="https://github.com/Harshkhosla/Live-Frontend-of-health-care"
                 effect="slideUp"
             >
-                <ImageIcon /> Dalle Clone
+                <ImageIcon /> Medilocker
             </List>
         </div>
     );
