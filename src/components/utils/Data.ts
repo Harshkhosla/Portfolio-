@@ -37,6 +37,14 @@
         },
         {
             id: 5,
+            title: 'Ticket Counter',
+            src: '/projects/block.png',
+            exp: '1 day ago',
+            snippetCount: 1128,
+            progress: 100,
+        },
+        {
+            id: 6,
             title: 'Trello Clone',
             src: '/projects/Trello.png',
             exp: '1 day ago',
@@ -132,14 +140,14 @@ export const backendCard = [
 ];
 
 export const databaseCard = [
-    // {
-    //     id: 1,
-    //     title: 'MySQL',
-    //     src: '/tech/database/mysql.jpeg',
-    //     exp: '1 day ago',
-    //     snippetCount: 1128,
-    //     progress: 80,
-    // },
+    {
+        id: 1,
+        title: 'MySQL',
+        src: '/tech/database/mysql.jpeg',
+        exp: '1 day ago',
+        snippetCount: 1128,
+        progress: 80,
+    },
     {
         id: 1,
         title: 'MongoDB',
