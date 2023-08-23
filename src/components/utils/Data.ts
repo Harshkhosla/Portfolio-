@@ -293,12 +293,12 @@ export const otherCards = [
         snippetCount: 1128,
         progress: 80,
     },
-    // {
-    //     id: 3,
-    //     title: 'GraphQl',
-    //     src: '/tech/others/graphql.png',
-    //     exp: '1 day ago',
-    //     snippetCount: 1128,
-    //     progress: 70,
-    // },
+    {
+        id: 3,
+        title: 'GraphQl',
+        src: '/tech/others/graphql.png',
+        exp: '1 day ago',
+        snippetCount: 1128,
+        progress: 70,
+    },
 ];
